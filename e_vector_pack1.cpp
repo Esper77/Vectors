@@ -16,7 +16,7 @@ void itc_even_parts_list(const vector <int> &mass, vector <int> &mass2){
 int itc_positive_list(const vector <int> &mass){
     int counter = 0;
     for (int x = 0; x < mass.size(); x++)
-        if (mass[x] > 0)
+        if (mass[x] >= 0)
             counter++;
     return counter;
 }
