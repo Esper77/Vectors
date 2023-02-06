@@ -23,22 +23,22 @@ void itc_rev_par_list(vector <int> &mass){
 }
 
 
-void itc_lshift_list(vector <int> &mass){
-    if (mass.size() > 0){
-    int container = mass[0];
-    for(int x = mass.size() - 1; x > 1; x--)
-        mass[x-1] = mass[x];
-    mass[mass.size() - 1] = container;
-    }
-}
-
-
 void itc_rshift_list(vector <int> &mass){
     if (mass.size() > 0){
     int container = mass[mass.size() - 1];
-    for(int x = 1; x < mass.size() - 1; x++)
-        mass[x] = mass[x-1];
-    mass[0] = container;
+        for(int x = mass.size() - 2; x > -1; x--)
+            mass[x+1] = mass[x];
+        mass[0] = container;
+}
+}
+
+
+void itc_lshift_list(vector <int> &mass){
+    if (mass.size() > 0){
+    int container = mass[0];
+    for(int x = 1; x < mass.size(); x++)
+        mass[x - 1] = mass[x];
+    mass[mass.size() - 1] = container;
     }
 }
 
@@ -47,7 +47,7 @@ void itc_super_shift_list(vector <int> &mass, int n){
     if (n > 0)
         for (int x = 0; x < n; x++)
             itc_rshift_list(mass);
-    else 
+    else
         if (n < 0){
             n *= -1;
             for (int x = 0; x < n ; x++)
