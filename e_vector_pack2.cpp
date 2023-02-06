@@ -14,10 +14,10 @@ void itc_rev_list(vector <int> &mass){
 void itc_rev_par_list(vector <int> &mass){
     int buffer, len;
     len = mass.size();
-    for (int x = 0; x < len-1; x += 2){
+    for (int x = 1; x < len-1; x += 2){
         buffer = mass[x];
-        mass[x] = mass[len+1];
-        mass[x+1] = buffer;
+        mass[x] = mass[len-1];
+        mass[x-1] = buffer;
     }
 }
 
@@ -31,10 +31,12 @@ void itc_lshift_list(vector <int> &mass){
 
 
 void itc_rshift_list(vector <int> &mass){
+    if (mass.size() > 0){
     int container = mass[mass.size() - 1];
     for(int x = 1; x < mass.size() - 1; x++)
-        mass[x+1] = mass[x];
+        mass[x] = mass[x-1];
     mass[0] = container;
+    }
 }
 
 
