@@ -7,3 +7,4 @@ obj/Debug/e_vector_pack1.o
 obj/Debug/e_vector_pack2.o
 main.o
 Vectors.layout
+.vscode/settings.json
