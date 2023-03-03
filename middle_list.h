@@ -38,4 +38,4 @@ void itc_odd_even_analysis_lst(const vector <int> &lst);
 
 void itc_pos_neg_analysis_lst(const vector <int> &lst);
 
-#endif MIDDLE_LIST_H_INCLUDED
+#endif // MIDDLE_LIST_H_INCLUDED
