@@ -14,6 +14,8 @@ int list_max(vector <int>& mass);
 
 int list_min(vector <int>& mass);
 
+long sum_list(const vector <int> &lst);
+
 // pack1
 
 vector <char> itc_strtlist(string str);

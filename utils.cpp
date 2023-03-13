@@ -22,3 +22,11 @@ int list_min(vector <int>& mass) {
             minimum = mass[i];
     return minimum;
 }
+
+long sum_list(const vector <int> &lst){
+    long long sum = 0;
+    if (lst.size() != 0)
+        for(long long i = 0; i < lst.size(); ++i)
+            sum += lst[i];
+    return sum;
+}

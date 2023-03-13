@@ -11,7 +11,7 @@ vector <char> itc_strtlist(string str){
 
 string itc_join(vector <char> lst, string sep){
     string str = "";
-    str += lst[0]
+    str += lst[0];
     for (int i = 1; i < lst.size(); i++) {
         str += sep;
         str += lst[i];
@@ -38,7 +38,7 @@ string itc_rmstrchar(string str, string less){
         for (int x = 0; x < len_remove; x++)
             if ((str[i] != ' ') && (less[x] != str[i]))
                 new_str += str[i];
-    return neew_str;
+    return new_str;
 }
 
  long itc_sumlst(const vector <int> &lst){
