@@ -37,4 +37,9 @@ void itc_pos_neg_separator_lst(const vector <int> &lst, vector <int> &lst1, vect
 void itc_odd_even_analysis_lst(const vector <int> &lst){
     vector <int> odd, even;
     itc_odd_even_separator_lst(lst, even, odd);
+    cout << "Анализ списка:" << '\n';
+    cout << "Количество четных чисел: " << even.size() << ",\t\t" << "Количество нечетных чисел: " << odd.size() << "\n";
+    cout << "Максимальная четная цифра: " << itc_max_lst(even) << ",\t\t" << "Максимальная нечетная цифра: " << itc_max_lst(odd) << ",\n";
+    cout << "Минимальная четная цифра: " << itc_min_lst(even) << ",\t\t" << "Минимальная нечетная цифра: " << itc_min_lst(odd) << ",\n";
+    cout << "Сумма четных чисел: " << itc_sumlst(even) << ",\t\t" << "Сумма нечетных чисел: " << itc_sumlst(odd) << ",\n";
 }

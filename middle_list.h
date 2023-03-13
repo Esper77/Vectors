@@ -10,6 +10,10 @@ using namespace std;
 
 long long itc_len(string str);
 
+int list_max(vector <int>& mass);
+
+int list_min(vector <int>& mass);
+
 // pack1
 
 vector <char> itc_strtlist(string str);
