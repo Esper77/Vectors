@@ -33,7 +33,7 @@ string itc_rmstrchar(string str, string less){
     string new_str = "";
     int len_str, len_remove;
     len_str = itc_len(str);
-    len_str = itc_len(less);
+    len_remove = itc_len(less);
     for (int i = 0; i < len_str; i++)
         for (int x = 0; x < len_remove; x++)
             if ((str[i] != ' ') && (less[x] != str[i]))
