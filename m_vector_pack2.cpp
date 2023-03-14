@@ -24,22 +24,22 @@ void itc_odd_even_separator_lst(const vector <int> &lst, vector <int> &lst1, vec
 }
 
 void itc_pos_neg_separator_lst(const vector <int> &lst, vector <int> &lst1, vector <int> &lst2, vector <int> &lst3){
-    for (int i = 0; i < lst.size(); i++)
-        if (lst[i] > 0)
+    for (int i = 0; i < lst.size(); i++){
+        if (lst[i] < 0)
             lst1.push_back(lst[i]);
-        else
-            if (lst[i] < 0)
-                lst3.push_back(lst[i]);
-            else
-                lst2.push_back(lst[i]);
+        if (lst[i] > 0)
+            lst3.push_back(lst[i]);
+        if (lst[i] == 0)
+            lst2.push_back(lst[i]);
+    }
 }
 
 void itc_odd_even_analysis_lst(const vector <int> &lst){
     vector <int> odd, even;
     itc_odd_even_separator_lst(lst, even, odd);
-    cout << "Анализ списка:" << '\n';
-    cout << "Количество четных чисел: " << even.size() << ",\t\t" << "Количество нечетных чисел: " << odd.size() << "\n";
-    cout << "Максимальная четная цифра: " << list_max(even) << ",\t\t" << "Максимальная нечетная цифра: " << list_max(odd) << ",\n";
-    cout << "Минимальная четная цифра: " << list_min(even) << ",\t\t" << "Минимальная нечетная цифра: " << list_min(odd) << ",\n";
-    cout << "Сумма четных чисел: " << sum_list(even) << ",\t\t" << "Сумма нечетных чисел: " << sum_list(odd) << ",\n";
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:" << '\n';
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << even.size() << ",\t\t" << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << odd.size() << "\n";
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << list_max(even) << ",\t\t" << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << list_max(odd) << ",\n";
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << list_min(even) << ",\t\t" << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << list_min(odd) << ",\n";
+    cout << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << sum_list(even) << ",\t\t" << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " << sum_list(odd) << ",\n";
 }
