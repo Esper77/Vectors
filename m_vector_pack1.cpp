@@ -32,19 +32,19 @@ string itc_rmstrspc(string str){
 string itc_rmstrchar(string str, string less){
     string new_str = "";
     int len_str, len_remove;
-    bool flag;
-
+    bool flag = true;
     len_str = itc_len(str);
     len_remove = itc_len(less);
-    for (int i = 0; i < len_str; i++){
+    for (int i = 0; i < len_str; i++)
+    {
         for (int x = 0; x < len_remove; x++)
-            if (less[x] != str[i])
+            if (less[x] == str[i])
                 flag = false;
         if(flag)
             new_str += str[i];
         flag = true;
+        return new_str;
     }
-    return new_str;
 }
 
  long itc_sumlst(const vector <int> &lst){
