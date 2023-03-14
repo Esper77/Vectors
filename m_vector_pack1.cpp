@@ -43,8 +43,8 @@ string itc_rmstrchar(string str, string less){
         if(flag)
             new_str += str[i];
         flag = true;
-        return new_str;
     }
+    return new_str + "\0";
 }
 
  long itc_sumlst(const vector <int> &lst){
