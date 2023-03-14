@@ -10,3 +10,14 @@ main.o
 Vectors.layout
 .vscode/settings.json
 .vs
+obj/Debug/Desktop/Vectors-master/e_vector_pack1.o
+obj/Debug/Desktop/Vectors-master/e_vector_pack2.o
+obj/Debug/Desktop/Vectors-master/m_vector_pack1.o
+obj/Debug/Desktop/Vectors-master/m_vector_pack2.o
+obj/Debug/Desktop/Vectors-master/utils.o
+obj/Debug/source/repos/Vectors/e_vector_pack1.o
+obj/Debug/source/repos/Vectors/e_vector_pack2.o
+obj/Debug/source/repos/Vectors/m_vector_pack1.o
+obj/Debug/source/repos/Vectors/m_vector_pack2.o
+obj/Debug/source/repos/Vectors/m_vector_pack3.o
+obj/Debug/source/repos/Vectors/utils.o
